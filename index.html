@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/index.css">
+    <link rel="stylesheet" href="./assets/main-page/style.css">
+    <title>VOGUE CAFE</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="col-left">
+                <div class="logo">
+
+                    CITY NAME<br>
+                    <span class="--custom-logo-font">VOGUE</span><span class="--logo-font">CAFE<span>
+
+                </div>
+            </div>
+            <div class="col-right">
+                <nav class="header-menu">
+                    <ul class="header-menu-list">
+                        <li class="header-menu-item">
+                            <a class="header-menu-link" href="#Menu">
+                                Menu
+                            </a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a class="header-menu-link" href="#Photos">
+                                Photos
+                            </a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a class="header-menu-link" href="#Events">
+                                Events
+                            </a>
+                        </li>
+                        <li class="header-menu-item">
+                            <a class="header-menu-link" href="#Reservations">
+                                Reservations
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <span class="vertical-devider">|</span>
+                <select class="header-lng-switcher" name="" id="">
+                    <option value="en">en</option>
+                </select>
+                <div class="header-socials">
+                    <ul class="header-socials-list">
+                        <li class="header-socials-item">
+                            <a class="header-socials-link" href="#">
+                                <svg fill="#fff" height="22px" width="22px" version="1.1" id="Layer_1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    viewBox="0 0 310 310" xml:space="preserve">
+                                    <g id="XMLID_834_">
+                                        <path id="XMLID_835_" d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064
+		c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996
+		V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545
+		C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703
+		c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z" />
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="header-socials-item">
+                            <a class="header-socials-link" href="#">
+                                <svg fill="#ffffff" height="22px" width="22px" version="1.1" id="Layer_1"
+                                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    viewBox="0 0 169.063 169.063" xml:space="preserve">
+                                    <g>
+                                        <path d="M122.406,0H46.654C20.929,0,0,20.93,0,46.655v75.752c0,25.726,20.929,46.655,46.654,46.655h75.752
+		c25.727,0,46.656-20.93,46.656-46.655V46.655C169.063,20.93,148.133,0,122.406,0z M154.063,122.407
+		c0,17.455-14.201,31.655-31.656,31.655H46.654C29.2,154.063,15,139.862,15,122.407V46.655C15,29.201,29.2,15,46.654,15h75.752
+		c17.455,0,31.656,14.201,31.656,31.655V122.407z" />
+                                        <path d="M84.531,40.97c-24.021,0-43.563,19.542-43.563,43.563c0,24.02,19.542,43.561,43.563,43.561s43.563-19.541,43.563-43.561
+		C128.094,60.512,108.552,40.97,84.531,40.97z M84.531,113.093c-15.749,0-28.563-12.812-28.563-28.561
+		c0-15.75,12.813-28.563,28.563-28.563s28.563,12.813,28.563,28.563C113.094,100.281,100.28,113.093,84.531,113.093z" />
+                                        <path d="M129.921,28.251c-2.89,0-5.729,1.17-7.77,3.22c-2.051,2.04-3.23,4.88-3.23,7.78c0,2.891,1.18,5.73,3.23,7.78
+		c2.04,2.04,4.88,3.22,7.77,3.22c2.9,0,5.73-1.18,7.78-3.22c2.05-2.05,3.22-4.89,3.22-7.78c0-2.9-1.17-5.74-3.22-7.78
+		C135.661,29.421,132.821,28.251,129.921,28.251z" />
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="banner" id="Banner">
+            <div class="banner-inner">
+                <h3 class="banner-title">
+                    RUA DE AVIS, 10<br>
+                    4050 PORTO<br>
+                    PORTUGAL<br>
+                    <a href="tel:+351223398550">
+                        +351 223 398 550
+                    </a>
+                </h3>
+                <button class="btn-first-style">
+                    MAKE A RESERVATION
+                </button>
+            </div>
+        </div>
+        <section id="About">
+            <div class="about container">
+                <div class="col">
+                    <h2>
+                        CITY NAME
+                        <br>
+                        <span class="--custom-logo-font">VOGUE</span>
+                        <br>
+                        <span class="--logo-font">CAFE<span>
+                    </h2>
+                </div>
+                <div class="col">
+                    <p> Offering a modern, elegant and stylish ambience together with food and drinks that are simply
+                        and beautifully crafted and presented, Vogue Café Shanghai gives you the opportunity to step
+                        inside the Vogue world, a world of excitement, luxury and timeless elegance.</p>
+                    <p> With décor that feels like it has been lifted directly from the pages of the magazine, Vogue
+                        Café is the place for the fashionable to meet, connect and be seen.</p>
+                </div>
+            </div>
+        </section>
+        <section id="Menu">
+            <div class="menu container">
+                <h2>
+                    MENU
+                </h2>
+                <div class="menu-swiper">
+                    <!-- swiper1 -->
+                    <div class="swiper-container swiper1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide selected">Small plates</div>
+                            <div class="swiper-slide">Salads</div>
+                            <div class="swiper-slide">Soups</div>
+                            <div class="swiper-slide">Sandwiches</div>
+                            <div class="swiper-slide">Mains</div>
+                            <div class="swiper-slide">Vegetarian</div>
+                            <div class="swiper-slide">Desserts</div>
+                            <div class="swiper-slide">Brunch</div>
+
+                        </div>
+                    </div>
+                    <!-- swiper2 -->
+                    <div class="swiper-container swiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <ul class="list">
+                                    <li class="item">
+                                        <div class="item-inner">
+                                            <h4 class="item-inner__title">
+                                                Title
+                                            </h4>
+                                            <h5 class="item-inner__undertitle">
+                                                UnderTitle
+                                            </h5>
+                                        </div>
+                                        <span class="item-cost">
+                                            24
+                                        </span>
+                                    </li>
+                                    <li class="item">
+                                        <div class="item-inner">
+                                            <h4 class="item-inner__title">
+                                                Title
+                                            </h4>
+                                            <h5 class="item-inner__undertitle">
+                                                UnderTitle
+                                            </h5>
+                                        </div>
+                                        <span class="item-cost">
+                                            24
+                                        </span>
+                                    </li>
+                                    <li class="item">
+                                        <div class="item-inner">
+                                            <h4 class="item-inner__title">
+                                                Title
+                                            </h4>
+                                            <h5 class="item-inner__undertitle">
+                                                UnderTitle
+                                            </h5>
+                                        </div>
+                                        <span class="item-cost">
+                                            24
+                                        </span>
+                                    </li>
+                                    <li class="item">
+                                        <div class="item-inner">
+                                            <h4 class="item-inner__title">
+                                                Title
+                                            </h4>
+                                            <h5 class="item-inner__undertitle">
+                                                UnderTitle
+                                            </h5>
+                                        </div>
+                                        <span class="item-cost">
+                                            24
+                                        </span>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="swiper-slide">
+                                <ul class="list">
+                                    <li class="item">
+                                        <div class="item-inner">
+                                            <h4 class="item-inner__title">
+                                                Title
+                                            </h4>
+                                            <h5 class="item-inner__undertitle">
+                                                UnderTitle
+                                            </h5>
+                                        </div>
+                                        <span class="item-cost">
+                                            24
+                                        </span>
+                                    </li>
+                                    <li class="item">
+                                        <div class="item-inner">
+                                            <h4 class="item-inner__title">
+                                                Title
+                                            </h4>
+                                            <h5 class="item-inner__undertitle">
+                                                UnderTitle
+                                            </h5>
+                                        </div>
+                                        <span class="item-cost">
+                                            24
+                                        </span>
+                                    </li>
+                                    <li class="item">
+                                        <div class="item-inner">
+                                            <h4 class="item-inner__title">
+                                                Title
+                                            </h4>
+                                            <h5 class="item-inner__undertitle">
+                                                UnderTitle
+                                            </h5>
+                                        </div>
+                                        <span class="item-cost">
+                                            24
+                                        </span>
+                                    </li>
+                                    <li class="item">
+                                        <div class="item-inner">
+                                            <h4 class="item-inner__title">
+                                                Title
+                                            </h4>
+                                            <h5 class="item-inner__undertitle">
+                                                UnderTitle
+                                            </h5>
+                                        </div>
+                                        <span class="item-cost">
+                                            24
+                                        </span>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="swiper-slide">
+                                <ul class="list">
+                                    <li class="item">
+                                        <div class="item-inner">
+                                            <h4 class="item-inner__title">
+                                                Title
+                                            </h4>
+                                            <h5 class="item-inner__undertitle">
+                                                UnderTitle
+                                            </h5>
+                                        </div>
+                                        <span class="item-cost">
+                                            24
+                                        </span>
+                                    </li>
+                                    <li class="item">
+                                        <div class="item-inner">
+                                            <h4 class="item-inner__title">
+                                                Title
+                                            </h4>
+                                            <h5 class="item-inner__undertitle">
+                                                UnderTitle
+                                            </h5>
+                                        </div>
+                                        <span class="item-cost">
+                                            24
+                                        </span>
+                                    </li>
+                                    <li class="item">
+                                        <div class="item-inner">
+                                            <h4 class="item-inner__title">
+                                                Title
+                                            </h4>
+                                            <h5 class="item-inner__undertitle">
+                                                UnderTitle
+                                            </h5>
+                                        </div>
+                                        <span class="item-cost">
+                                            24
+                                        </span>
+                                    </li>
+                                    <li class="item">
+                                        <div class="item-inner">
+                                            <h4 class="item-inner__title">
+                                                Title
+                                            </h4>
+                                            <h5 class="item-inner__undertitle">
+                                                UnderTitle
+                                            </h5>
+                                        </div>
+                                        <span class="item-cost">
+                                            24
+                                        </span>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="swiper-slide">
+                                <ul class="list">
+                                    <li class="item">
+                                        <div class="item-inner">
+                                            <h4 class="item-inner__title">
+                                                Title
+                                            </h4>
+                                            <h5 class="item-inner__undertitle">
+                                                UnderTitle
+                                            </h5>
+                                        </div>
+                                        <span class="item-cost">
+                                            24
+                                        </span>
+                                    </li>
+                                    <li class="item">
+                                        <div class="item-inner">
+                                            <h4 class="item-inner__title">
+                                                Title
+                                            </h4>
+                                            <h5 class="item-inner__undertitle">
+                                                UnderTitle
+                                            </h5>
+                                        </div>
+                                        <span class="item-cost">
+                                            24
+                                        </span>
+                                    </li>
+                                    <li class="item">
+                                        <div class="item-inner">
+                                            <h4 class="item-inner__title">
+                                                Title
+                                            </h4>
+                                            <h5 class="item-inner__undertitle">
+                                                UnderTitle
+                                            </h5>
+                                        </div>
+                                        <span class="item-cost">
+                                            24
+                                        </span>
+                                    </li>
+                                    <li class="item">
+                                        <div class="item-inner">
+                                            <h4 class="item-inner__title">
+                                                Title
+                                            </h4>
+                                            <h5 class="item-inner__undertitle">
+                                                UnderTitle
+                                            </h5>
+                                        </div>
+                                        <span class="item-cost">
+                                            24
+                                        </span>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="swiper-slide">
+                                <ul class="list">
+                                    <li class="item">
+                                        <div class="item-inner">
+                                            <h4 class="item-inner__title">
+                                                Title
+                                            </h4>
+                                            <h5 class="item-inner__undertitle">
+                                                UnderTitle
+                                            </h5>
+                                        </div>
+                                        <span class="item-cost">
+                                            24
+                                        </span>
+                                    </li>
+                                    <li class="item">
+                                        <div class="item-inner">
+                                            <h4 class="item-inner__title">
+                                                Title
+                                            </h4>
+                                            <h5 class="item-inner__undertitle">
+                                                UnderTitle
+                                            </h5>
+                                        </div>
+                                        <span class="item-cost">
+                                            24
+                                        </span>
+                                    </li>
+                                    <li class="item">
+                                        <div class="item-inner">
+                                            <h4 class="item-inner__title">
+                                                Title
+                                            </h4>
+                                            <h5 class="item-inner__undertitle">
+                                                UnderTitle
+                                            </h5>
+                                        </div>
+                                        <span class="item-cost">
+                                            24
+                                        </span>
+                                    </li>
+                                    <li class="item">
+                                        <div class="item-inner">
+                                            <h4 class="item-inner__title">
+                                                Title
+                                            </h4>
+                                            <h5 class="item-inner__undertitle">
+                                                UnderTitle
+                                            </h5>
+                                        </div>
+                                        <span class="item-cost">
+                                            24
+                                        </span>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="swiper-slide">
+                                <ul class="list">
+                                    <li class="item">
+                                        <div class="item-inner">
+                                            <h4 class="item-inner__title">
+                                                Title
+                                            </h4>
+                                            <h5 class="item-inner__undertitle">
+                                                UnderTitle
+                                            </h5>
+                                        </div>
+                                        <span class="item-cost">
+                                            24
+                                        </span>
+                                    </li>
+                                    <li class="item">
+                                        <div class="item-inner">
+                                            <h4 class="item-inner__title">
+                                                Title
+                                            </h4>
+                                            <h5 class="item-inner__undertitle">
+                                                UnderTitle
+                                            </h5>
+                                        </div>
+                                        <span class="item-cost">
+                                            24
+                                        </span>
+                                    </li>
+                                    <li class="item">
+                                        <div class="item-inner">
+                                            <h4 class="item-inner__title">
+                                                Title
+                                            </h4>
+                                            <h5 class="item-inner__undertitle">
+                                                UnderTitle
+                                            </h5>
+                                        </div>
+                                        <span class="item-cost">
+                                            24
+                                        </span>
+                                    </li>
+                                    <li class="item">
+                                        <div class="item-inner">
+                                            <h4 class="item-inner__title">
+                                                Title
+                                            </h4>
+                                            <h5 class="item-inner__undertitle">
+                                                UnderTitle
+                                            </h5>
+                                        </div>
+                                        <span class="item-cost">
+                                            24
+                                        </span>
+                                    </li>
+                                    <li class="item">
+                                        <div class="item-inner">
+                                            <h4 class="item-inner__title">
+                                                Title
+                                            </h4>
+                                            <h5 class="item-inner__undertitle">
+                                                UnderTitle
+                                            </h5>
+                                        </div>
+                                        <span class="item-cost">
+                                            24
+                                        </span>
+                                    </li>
+                                    <li class="item">
+                                        <div class="item-inner">
+                                            <h4 class="item-inner__title">
+                                                Title
+                                            </h4>
+                                            <h5 class="item-inner__undertitle">
+                                                UnderTitle
+                                            </h5>
+                                        </div>
+                                        <span class="item-cost">
+                                            24
+                                        </span>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="swiper-slide">
+                                <ul class="list">
+                                    <li class="item">
+                                        <div class="item-inner">
+                                            <h4 class="item-inner__title">
+                                                Title
+                                            </h4>
+                                            <h5 class="item-inner__undertitle">
+                                                UnderTitle
+                                            </h5>
+                                        </div>
+                                        <span class="item-cost">
+                                            24
+                                        </span>
+                                    </li>
+                                    <li class="item">
+                                        <div class="item-inner">
+                                            <h4 class="item-inner__title">
+                                                Title
+                                            </h4>
+                                            <h5 class="item-inner__undertitle">
+                                                UnderTitle
+                                            </h5>
+                                        </div>
+                                        <span class="item-cost">
+                                            24
+                                        </span>
+                                    </li>
+                                    <li class="item">
+                                        <div class="item-inner">
+                                            <h4 class="item-inner__title">
+                                                Title
+                                            </h4>
+                                            <h5 class="item-inner__undertitle">
+                                                UnderTitle
+                                            </h5>
+                                        </div>
+                                        <span class="item-cost">
+                                            24
+                                        </span>
+                                    </li>
+                                    <li class="item">
+                                        <div class="item-inner">
+                                            <h4 class="item-inner__title">
+                                                Title
+                                            </h4>
+                                            <h5 class="item-inner__undertitle">
+                                                UnderTitle
+                                            </h5>
+                                        </div>
+                                        <span class="item-cost">
+                                            24
+                                        </span>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class="swiper-slide">
+                                <ul class="list">
+                                    <li class="item">
+                                        <div class="item-inner">
+                                            <h4 class="item-inner__title">
+                                                Title
+                                            </h4>
+                                            <h5 class="item-inner__undertitle">
+                                                UnderTitle
+                                            </h5>
+                                        </div>
+                                        <span class="item-cost">
+                                            24
+                                        </span>
+                                    </li>
+                                    <li class="item">
+                                        <div class="item-inner">
+                                            <h4 class="item-inner__title">
+                                                Title
+                                            </h4>
+                                            <h5 class="item-inner__undertitle">
+                                                UnderTitle
+                                            </h5>
+                                        </div>
+                                        <span class="item-cost">
+                                            24
+                                        </span>
+                                    </li>
+                                    <li class="item">
+                                        <div class="item-inner">
+                                            <h4 class="item-inner__title">
+                                                Title
+                                            </h4>
+                                            <h5 class="item-inner__undertitle">
+                                                UnderTitle
+                                            </h5>
+                                        </div>
+                                        <span class="item-cost">
+                                            24
+                                        </span>
+                                    </li>
+                                    <li class="item">
+                                        <div class="item-inner">
+                                            <h4 class="item-inner__title">
+                                                Title
+                                            </h4>
+                                            <h5 class="item-inner__undertitle">
+                                                UnderTitle
+                                            </h5>
+                                        </div>
+                                        <span class="item-cost">
+                                            24
+                                        </span>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <div id="Collage">
+            <div class="collage">
+                <div class="col">
+                    <div class="collage-item">
+                        <img src="./assets/images/1.png" alt="" class="collage-item__img">
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="collage-item">
+                        <img src="./assets/images/2.png" alt="" class="collage-item__img">
+
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="collage-item">
+                        <img src="./assets/images/3.png" alt="" class="collage-item__img">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="Events" class="events-section">
+            <div class="events container">
+                <h2 class="events-title">Events</h2>
+                <ul class="events-list">
+                    <li class="events-item">
+                        <h3>
+                            Set lunch menu
+                        </h3>
+                        <p>
+                            Mondays to Fridays | 12:30px - 3px<br>
+                            3-Courses for 25
+                        </p>
+                    </li>
+                    <li class="events-item">
+                        <h3>
+                            Set lunch menu
+                        </h3>
+                        <p>
+                            Mondays to Fridays | 12:30px - 3px<br>
+                            3-Courses for 25
+                        </p>
+                    </li>
+                    <li class="events-item">
+                        <h3>
+                            Set lunch menu
+                        </h3>
+                        <p>
+                            Mondays to Fridays | 12:30px - 3px<br>
+                            3-Courses for 25
+                        </p>
+                    </li>
+                    <li class="events-item">
+                        <h3>
+                            Set lunch menu
+                        </h3>
+                        <p>
+                            Mondays to Fridays | 12:30px - 3px<br>
+                            3-Courses for 25
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="Contacts">
+            <div class="contacts">
+                <div class="col contacts-inner">
+                    <div class="contacts-content">
+                        <h2>
+                            CITY NAME<br>
+                            <span class="--custom-logo-font">VOGUE</span>
+                            <br><span class="--logo-font">CAFE<span>
+                        </h2>
+
+                        <!-- <h3>
+                            RUA DE AVIS, 10<br>
+                            4050 PORTO<br>
+                            PORTUGAL<br>
+                            <a href="tel:+351223398550">
+                                +351 223 398 550
+                            </a>
+                        </h3> -->
+
+                        <h3 class="contacts-title">
+                            RUA DE AVIS, 10<br>
+                            4050 PORTO<br>
+                            PORTUGAL<br>
+                            <a href="tel:+351223398550">
+                                +351 223 398 550
+                            </a>
+                        </h3>
+
+                        <h3>
+                            Opening hours
+                        </h3>
+
+                        <ul>
+                            <li>
+                                Sunday to Thursday
+                                <ul>
+                                    <li>
+                                        12:30 pm - 12 am
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li>
+                                Friday. Saturday and Eves of Bank Holidays
+                                <ul>
+                                    <li>
+                                        12:30 pm - 01 am
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <h3>
+                            Conde nast
+                        </h3>
+                    </div>
+
+                </div>
+                <div class="col map">
+                    <img src="./assets/images/map.jpg" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-logo">
+                <h2>
+                    <span class="--custom-logo-font">VOGUE</span><span class="--logo-font">CAFE<span>
+                </h2>
+
+            </div>
+            <nav class="footer-nav">
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">
+                            Doha
+                        </a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">
+                            Doha
+                        </a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">
+                            Doha
+                        </a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">
+                            Doha
+                        </a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">
+                            Doha
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="footer-bottom">
+                <h3 class="footer-bottom__title">
+                    Conde nast
+                </h3>
+                <div class="footer-bottom__content">
+                    <div class="row">
+                        <p>COPY RIGTHS</p>
+                    </div>
+                    <div class="row">
+                        <p>The material</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script>
+        window.onload = function () {
+
+            function setCurrentSlide(ele, index) {
+                $(".swiper1 .swiper-slide").removeClass("selected");
+                if (ele.classList) {
+                    ele.classList.add("selected");
+                } else {
+                    ele.addClass("selected")
+                }
+            }
+
+            var swiper1 = new Swiper('.swiper1', {
+                slidesPerView: 'auto',
+                paginationClickable: true,
+                // spaceBetween: 20,
+                freeMode: true,
+                loop: false,
+                onTab: function (swiper) {
+                    var n = swiper1.clickedIndex;
+                }
+            });
+            swiper1.slides.forEach((element, index) => {
+                element.onclick = () => {
+                    setCurrentSlide(element, index);
+                    swiper2.slideTo(index, 500, false);
+                }
+            });
+
+            var swiper2 = new Swiper('.swiper2', {
+                direction: 'horizontal',
+                loop: false,
+                autoHeight: true,
+                on: {
+                    slideChange: function (swiper) {
+
+                        var n = swiper.activeIndex;
+                        setCurrentSlide($(".swiper1 .swiper-slide").eq(n), n);
+                        console.log('sss')
+                        swiper1.slideTo(n, 500, false);
+                    }
+                }
+
+            });
+            let Data = "smallplates, salads, soups, sandwiches, mains, vegetarian, dessersts, burnch";
+            $(".start").on('click', function () {
+                $(".show").html('');
+                var flag = true, j = 0;
+                (function Data() {
+                    if (j < Data.length) {
+                        setTimeout(function () {
+                            $(".show").html(Data.slice(0, j++));
+                            Data();
+                        }, 200);
+                    }
+                    else {
+                        $(".show").html(Data);
+                        flag = true;
+                    }
+                })();
+            });
+
+
+        }
+    </script>
+</body>
+
+
+</html>
