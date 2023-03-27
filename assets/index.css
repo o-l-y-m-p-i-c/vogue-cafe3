@@ -92,6 +92,10 @@ li {
     list-style: none;
 }
 
+img {
+    max-width: 100%;
+}
+
 ul,
 p,
 ol {
@@ -204,5 +208,5 @@ footer {
 }
 
 .collage {
-    padding-top: calc(var(--main-margin-top));
+    padding: calc(var(--main-margin-top)) 0;
 }

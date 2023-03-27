@@ -246,11 +246,11 @@ footer {
 /* Collage */
 
 .collage {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
 }
 
-.collage .col {
+/* .collage .col {
     width: calc(100% / 3);
     position: relative;
 
@@ -268,7 +268,7 @@ footer {
     top: 0;
     height: 100%;
     object-fit: cover;
-}
+} */
 
 /* Events */
 
@@ -427,6 +427,8 @@ footer {
 .swiper2.swiper-container {
     position: relative;
 }
+
+
 
 /* .swiper2.swiper-container::before {
     content: '';
@@ -601,6 +603,32 @@ footer {
     :root {
         --main-margin-top: 67px
     }
+
+    .mm-masonry {
+        /* display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* flex-wrap: wrap; */
+        /* display: flex;
+        flex-wrap: wrap; */
+    }
+
+    .mm-masonry__item {
+        /* flex-basis: 33.33%;
+        display: inline-flex; */
+        display: inline-block;
+        float: left;
+        max-width: 32%;
+    }
+
+    .mm-masonry__item img {
+        object-fit: contain;
+    }
+}
+
+@media screen and (min-width:320px) {
+    /* .mm-masonry__img {
+        max-width: 100%;
+    } */
 }
 
 @media screen and (max-width: 600px) {
@@ -620,9 +648,9 @@ footer {
 }
 
 @media screen and (max-width: 380px) {
-    .collage .col {
+    /* .collage .col {
         width: 50%;
-    }
+    } */
 }
 
 
@@ -791,4 +819,56 @@ footer {
 
 .footer a:hover {
     color: var(--hover-footer-link-color) !important
+}
+
+
+
+
+.mm-masonry__item {
+    width: 10%;
+    display: inline-flex;
+}
+
+.mm-masonry__item img {
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+}
+
+
+@media screen and (max-width:2560px) {
+    .mm-masonry__item {
+        min-width: calc(20%);
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .mm-masonry__item {
+        min-width: calc(20%);
+    }
+}
+
+
+@media screen and (max-width:1024px) {
+    .mm-masonry__item {
+        min-width: calc(25%);
+    }
+}
+
+@media screen and (max-width:768px) {
+    .mm-masonry__item {
+        min-width: calc(100% / 3);
+    }
+}
+
+@media screen and (max-width:480px) {
+    .mm-masonry__item {
+        min-width: 50%;
+    }
+}
+
+@media screen and (max-width:380px) {
+    /* .mm-masonry__item {
+        width: calc(100% / 2);
+    } */
 }

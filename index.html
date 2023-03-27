@@ -24,16 +24,13 @@
     <meta property="article:modified_time" content="2021-06-09T16:39:27+00:00">
     <meta name="twitter:card" content="summary_large_image">
 
-
+    <link href="./assets/Modules/AOS/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/Modules/Swiper/swiper.css">
     <link rel="stylesheet" href="./assets/index.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/main-page/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
-        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
 
 </head>
 
@@ -138,19 +135,18 @@
                     <div class="swiper-wrapper ">
                         <!-- Slides -->
                         <div class="swiper-slide">
-                            <img class="swiper-slide__img" src="./assets/images/banner1.jpg" alt="">
+                            <img class="swiper-slide__img" src="./assets/images/banner1.jpg" alt="img">
                         </div>
                         <div class="swiper-slide">
-                            <img class="swiper-slide__img" src="./assets/images/banner2.jpg" alt="">
+                            <img class="swiper-slide__img" src="./assets/images/banner2.jpg" alt="img">
 
                         </div>
                         <div class="swiper-slide">
-                            <img class="swiper-slide__img" src="./assets/images/banner3.jpg" alt="">
+                            <img class="swiper-slide__img" src="./assets/images/banner3.jpg" alt="img">
 
                         </div>
                         <div class="swiper-slide">
-                            <img class="swiper-slide__img" src="./assets/images/banner4.jpg" alt="">
-
+                            <img class="swiper-slide__img" src="./assets/images/banner4.jpg" alt="img">
                         </div>
                     </div>
                 </div>
@@ -183,13 +179,13 @@
                     </h1>
                 </div>
                 <div class="col">
-                    <p data-aos="fade-left">
+                    <p data-aos="fade-left" data-aos-once="true">
                         OFFERING A MODERN, ELEGANT AND STYLISH AMBIENCE TOGETHER WITH
                         FOOD AND DRINKS THAT ARE SIMPLY AND BEAUTIFULLY CRAFTED AND PRESENTED, VOGUE CAFE PORTO GIVES
                         YOU THE OPPORTUNITY TO STEP INSIDE THE VOGUE WORLD, A WORLD OF EXCITEMENT, LUXURY AND TIMELESS
                         ELEGANCE.
                     </p>
-                    <p data-aos="fade-left" data-aos-delay="50">
+                    <p data-aos="fade-left" data-aos-delay="50" data-aos-once="true">
                         WITH AN ALL DAY MENU REPRESENTING THE BEST OF MODERN EUROPEAN CUISINE THAT FEELS LIKE IT HAS
                         BEEN LIFTED DIRECTLY FROM THE
                         PAGES OF THE MAGAZINE, VOGUE CAFE IS THE PLACE TO MEET,
@@ -748,21 +744,89 @@
             </div>
         </section>
         <div id="Photos">
-            <div class="collage">
+            <!-- <div class="collage">
                 <div class="col">
                     <a class="collage-item" data-aos="zoom-in" data-fslightbox="gallery" href="./assets/images/1.png">
-                        <img src="./assets/images/1.png" alt="" class="collage-item__img">
+                        <img src="./assets/images/1.png" alt="img" class="collage-item__img">
                     </a>
 
                 </div>
                 <div class="col">
                     <a class="collage-item" data-aos="zoom-in" data-fslightbox="gallery" href="./assets/images/2.png">
-                        <img src="./assets/images/2.png" alt="" class="collage-item__img">
+                        <img src="./assets/images/2.png" alt="img" class="collage-item__img">
                     </a>
                 </div>
                 <div class="col">
                     <a class="collage-item" data-aos="zoom-in" data-fslightbox="gallery" href="./assets/images/3.png">
-                        <img src="./assets/images/3.png" alt="" class="collage-item__img">
+                        <img src="./assets/images/3.png" alt="img" class="collage-item__img">
+                    </a>
+                </div>
+            </div> -->
+            <div class="collage">
+                <div class="mm-masonry grid" id="mm-masonry">
+                    <a class="mm-masonry__item" data-aos="zoom-in" data-aos-once="true" data-fslightbox="gallery"
+                        href="./assets/images/1.png" style="--w: 500; --h: 870">
+                        <img class="mm-masonry__img" src="./assets/images/1.png" />
+                    </a>
+                    <a class="mm-masonry__item" data-aos="zoom-in" data-aos-once="true" data-fslightbox="gallery"
+                        href="./assets/images/2.png" style="--w: 300; --h: 490">
+                        <img class="mm-masonry__img" src="./assets/images/2.png" />
+                    </a>
+                    <a class="mm-masonry__item" data-aos="zoom-in" data-aos-once="true" data-fslightbox="gallery"
+                        href="./assets/images/3.png" style="--w: 500; --h: 870">
+                        <img class="mm-masonry__img" src="./assets/images/3.png" />
+                    </a>
+                    <a class="mm-masonry__item" data-aos="zoom-in" data-aos-once="true" data-fslightbox="gallery"
+                        href="./assets/images/banner1.jpg" style="--w: 200; --h: 150">
+                        <img class="mm-masonry__img" src="./assets/images/banner1.jpg" />
+                    </a>
+                    <a class="mm-masonry__item" data-aos="zoom-in" data-aos-once="true" data-fslightbox="gallery"
+                        href="./assets/images/banner2.jpg" style="--w: 400; --h: 320">
+                        <img class="mm-masonry__img" src="./assets/images/banner2.jpg" />
+                    </a>
+                    <a class="mm-masonry__item" data-aos="zoom-in" data-aos-once="true" data-fslightbox="gallery"
+                        href="./assets/images/1.png" style="--w: 500; --h: 870">
+                        <img class="mm-masonry__img" src="./assets/images/1.png" />
+                    </a>
+                    <a class="mm-masonry__item" data-aos="zoom-in" data-aos-once="true" data-fslightbox="gallery"
+                        href="./assets/images/2.png" style="--w: 300; --h: 490">
+                        <img class="mm-masonry__img" src="./assets/images/2.png" />
+                    </a>
+                    <a class="mm-masonry__item" data-aos="zoom-in" data-aos-once="true" data-fslightbox="gallery"
+                        href="./assets/images/3.png" style="--w: 500; --h: 870">
+                        <img class="mm-masonry__img" src="./assets/images/3.png" />
+                    </a>
+                    <a class="mm-masonry__item" data-aos="zoom-in" data-aos-once="true" data-fslightbox="gallery"
+                        href="./assets/images/banner1.jpg" style="--w: 200; --h: 150">
+                        <img class="mm-masonry__img" src="./assets/images/banner1.jpg" />
+                    </a>
+                    <a class="mm-masonry__item" data-aos="zoom-in" data-aos-once="true" data-fslightbox="gallery"
+                        href="./assets/images/banner2.jpg" style="--w: 400; --h: 320">
+                        <img class="mm-masonry__img" src="./assets/images/banner2.jpg" />
+                    </a>
+                    <a class="mm-masonry__item" data-aos="zoom-in" data-aos-once="true" data-fslightbox="gallery"
+                        href="./assets/images/3.png" style="--w: 500; --h: 870">
+                        <img class="mm-masonry__img" src="./assets/images/3.png" />
+                    </a>
+                    <a class="mm-masonry__item" data-aos="zoom-in" data-aos-once="true" data-fslightbox="gallery"
+                        href="./assets/images/banner1.jpg" style="--w: 200; --h: 150">
+                        <img class="mm-masonry__img" src="./assets/images/banner1.jpg" />
+                    </a>
+                    <a class="mm-masonry__item" data-aos="zoom-in" data-aos-once="true" data-fslightbox="gallery"
+                        href="./assets/images/banner2.jpg" style="--w: 400; --h: 320">
+                        <img class="mm-masonry__img" src="./assets/images/banner2.jpg" />
+                    </a>
+                    <a class="mm-masonry__item" data-aos="zoom-in" data-aos-once="true" data-fslightbox="gallery"
+                        href="./assets/images/3.png" style="--w: 500; --h: 870">
+                        <img class="mm-masonry__img" src="./assets/images/3.png" />
+                    </a>
+                    <a class="mm-masonry__item" data-aos="zoom-in" data-aos-once="true" data-fslightbox="gallery"
+                        href="./assets/images/banner1.jpg" style="--w: 200; --h: 150">
+                        <img class="mm-masonry__img" src="./assets/images/banner1.jpg" />
+                    </a>
+                    <a class="mm-masonry__item" data-aos="zoom-in" data-aos-once="true" data-fslightbox="gallery"
+                        href="./assets/images/banner2.jpg" style="--w: 400; --h: 320">
+                        <img class="mm-masonry__img" src="./assets/images/banner2.jpg" />
                     </a>
                 </div>
             </div>
@@ -771,7 +835,7 @@
             <div class="events container">
                 <h2 class="events-title">Events</h2>
                 <ul class="events-list">
-                    <li class="events-item" data-aos="fade-right" data-aos-delay="0">
+                    <li class="events-item" data-aos="fade-right" data-aos-once="true" data-aos-delay="0">
                         <h3 class="events-item__title">
                             Set lunch menu
                         </h3>
@@ -780,7 +844,7 @@
                             3-Courses for €25
                         </p>
                     </li>
-                    <li class="events-item" data-aos="fade-right" data-aos-delay="50">
+                    <li class="events-item" data-aos="fade-right" data-aos-once="true" data-aos-delay="50">
                         <h3 class="events-item__title">
                             AFTERNOON TEA
                         </h3>
@@ -788,7 +852,7 @@
                             Daily | 4pm-6pm
                         </p>
                     </li>
-                    <li class="events-item" data-aos="fade-right" data-aos-delay="100">
+                    <li class="events-item" data-aos="fade-right" data-aos-once="true" data-aos-delay="100">
                         <h3 class="events-item__title">
                             SET DINNER MENU
                         </h3>
@@ -797,7 +861,7 @@
                             3-Courses for €80
                         </p>
                     </li>
-                    <li class="events-item" data-aos="fade-right" data-aos-delay="150">
+                    <li class="events-item" data-aos="fade-right" data-aos-once="true" data-aos-delay="150">
                         <h3 class="events-item__title">
                             OYSTERS & PRESUNTO
                         </h3>
@@ -805,7 +869,7 @@
                             Daily | 7pm-8pm
                         </p>
                     </li>
-                    <li class="events-item" data-aos="fade-right" data-aos-delay="200">
+                    <li class="events-item" data-aos="fade-right" data-aos-once="true" data-aos-delay="200">
                         <h3 class="events-item__title">
                             WEEKEND BRUNCH
                         </h3>
@@ -847,12 +911,12 @@
                             </a>
                         </h3>
 
-                        <h3 data-aos="fade-right" data-aos-delay="0">
+                        <h3 data-aos="fade-right" data-aos-delay="0" data-aos-once="true">
                             Opening hours
                         </h3>
 
                         <ul>
-                            <li data-aos="fade-right" data-aos-delay="50">
+                            <li data-aos="fade-right" data-aos-delay="50" data-aos-once="true">
                                 Sunday to Thursday
                                 <ul>
                                     <li>
@@ -861,7 +925,7 @@
                                 </ul>
 
                             </li>
-                            <li data-aos="fade-right" data-aos-delay="100">
+                            <li data-aos="fade-right" data-aos-delay="100" data-aos-once="true">
                                 Friday. Saturday and Eves of Bank Holidays
                                 <ul>
                                     <li>
@@ -880,7 +944,7 @@
                 <div class="col map">
                     <div class="map-inner">
                         <!-- ACF MAP -->
-                        <img src="./assets/images/map.jpg" alt="">
+                        <img src="./assets/images/map.jpg" alt="img">
                     </div>
 
                 </div>
@@ -951,6 +1015,11 @@
 
         </div>
     </footer>
+    <script src="./assets/Modules/jQuery/jquery.js"></script>
+    <script src="./assets/Modules/Swiper/swiper.js"></script>
+    <script src="./assets/Modules/AOS/aos.js"></script>
+    <script src="./assets/Modules/LightBox/fslightbox.js"></script>
+    <script src="./assets/Modules/IsoType/isotype.js"></script>
     <script>
         window.onload = function () {
 
@@ -982,14 +1051,13 @@
                     var n = swiper1.clickedIndex;
                 }
             });
+
             swiper1.slides.forEach((element, index) => {
                 element.onclick = () => {
                     setCurrentSlide(element, index);
                     swiper2.slideTo(index, 500, false);
                 }
             });
-
-
 
             var swiper2 = new Swiper('.swiper2', {
                 direction: 'horizontal',
@@ -1007,7 +1075,17 @@
 
             });
 
+            $('.mm-masonry').isotope({
+                // options
+                itemSelector: '.mm-masonry__item',
+                layoutMode: 'masonry',
+                masonry: {
+                    // gutter: 10
+                }
 
+
+            });
+            AOS.init();
         }
         $('.burger-menu').on('click', function () {
             checkMenu()
@@ -1040,12 +1118,6 @@
 
 
     </script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="./assets/Modules/fslightbox-basic-3.4.1/fslightbox.js"></script>
-    <script>
-        AOS.init();
-    </script>
 </body>
-
 
 </html>
