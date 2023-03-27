@@ -59,6 +59,7 @@ Header
     margin-left: 5px;
     border: none;
     position: relative;
+    color: var(--text-color-primary);
     text-transform: uppercase;
     background-color: transparent;
     font-family: var(--font-family-secondary);
