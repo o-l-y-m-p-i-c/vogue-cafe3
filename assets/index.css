@@ -1,16 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300&display=swap');
 
 @font-face {
-    font-family: BodoniModa;
+    font-family: Didonesque-Roman;
     /* Имя шрифта */
-    src: url('./fonts/BodoniModa_60pt-Medium.ttf');
+    src: url('./fonts/FontsFree-Net-Didonesque-Roman.ttf');
     /* Путь к файлу со шрифтом */
 }
 
+@font-face {
+    font-family: Trade Gothic LT Bold;
+    /* Имя шрифта */
+    src: url('./fonts/Trade\ Gothic\ LT\ Bold.ttf');
+    /* Путь к файлу со шрифтом */
+}
+
+
+
 :root {
     --font-family-primary: 'Montserrat', sans-serif;
-    --font-family-secondary: 'Montserrat', sans-serif;
-    --font-famliy-text: 'Montserrat', sans-serif;
+    --font-family-secondary: Trade Gothic LT Bold, sans-serif;
+    --font-famliy-text: Didonesque-Roman, sans-serif;
 
     --color-primary: #fff;
     --color-secondary: #000;
@@ -26,6 +35,8 @@
 
     --footer-bg: #000000;
     --footer-text-color: #fff;
+    --footer-link-font-family: Trade Gothic LT Bold;
+    --footer-link-font-size: 26px;
 
 
     --h1-font-size: 28px;
@@ -34,20 +45,47 @@
     --h4-font-size: 28px;
     --h5-font-size: 28px;
 
-    --text-font-size: 14px;
+    --text-font-size: 16px;
 
-    --tab-font-size: 12px;
+    --slider-tab-size: 18px;
+    --slider-item-title-size: 16px;
+    --slider-item-undertitle-size: 15px;
+    --slider-item-price-size: 16px;
+
+
+    --events-item-title-size: 18px;
+    --events-item-text-size: 16px;
+
+    --main-margin-top: 87px;
+
+    --hover-color: rgba(74, 74, 74, 0.8);
+    ;
+    --hover-footer-link-color: rgba(255, 255, 255, 0.7);
 }
 
-h2 {
-    font-size: var(--h2-font-size);
-}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: var(--font-famliy-text);
+    font-size: var(--text-font-size);
+}
+
+
+h2 {
+    font-size: var(--h2-font-size);
+}
+
+h1,
+h2,
+h3,
+h4,
+.swiper1 .swiper-slide,
+.about p,
+.header-menu-link {
+    font-family: var(--font-family-secondary);
+    text-transform: uppercase;
 }
 
 li {
@@ -59,6 +97,10 @@ p,
 ol {
     padding: 0;
     margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 html,
@@ -80,6 +122,7 @@ a {
 
 body {
     display: flex;
+    overflow-x: hidden;
     flex-direction: column;
 }
 
@@ -87,16 +130,19 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    position: -webkit-sticky;
-    background-color: #fff;
+    backdrop-filter: blur(10px);
+    /* background-color: #fff; */
     box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
     flex: 0;
-    z-index: 1;
+    z-index: 10;
+    background-color: transparent;
+    transition: background-color 0.3s ease-out;
 }
 
 main {
-    margin-top: 90px;
+    margin-top: var(--main-margin-top);
     flex: 1 0 auto;
+
 }
 
 footer {
@@ -112,14 +158,21 @@ footer {
 
 .--custom-logo-font {
     font-size: 40px;
-    font-family: BodoniModa;
-    font-weight: 600;
+    font-family: Didonesque-Roman;
+    font-weight: 400;
+    line-height: 0.9;
 }
 
 .--logo-font {
-
+    line-height: 0.9;
     font-size: 40px;
     font-weight: 600;
+    font-family: Trade Gothic LT Bold;
+}
+
+.--logo {
+    line-height: 0.9;
+    font-size: 24px;
 }
 
 .btn-first-style {
@@ -130,7 +183,10 @@ footer {
     font-weight: 600;
     border: 2px solid black;
     cursor: pointer;
+    margin-top: 10px;
     transition: background 0.2s ease-out, color 0.2s ease-out;
+    font-family: var(--font-family-secondary);
+    display: inline-block;
 }
 
 .btn-first-style:hover {
@@ -143,7 +199,10 @@ footer {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+    padding: calc(var(--main-margin-top) + 5px) 120px;
+    /* padding-bottom: 0 !important; */
 }
 
-
-/* BodoniModa_60pt-Medium.ttf */
+.collage {
+    padding-top: calc(var(--main-margin-top));
+}

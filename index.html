@@ -5,10 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="icon" href="./assets/favicon.png" sizes="32x32">
+    <link rel="icon" href="./assets/favicon.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="./assets/favicon.png">
+    <meta name="msapplication-TileImage" content="./assets/favicon.png">
+
+
+    <title>Vogue Café Shanghai</title>
+    <meta name="description" content="“Vogue Café” 是上海别致的全天用餐体验. 它是现代时尚人士享用美味咖啡的目的地, 在轻松别致的环境中提供鸡尾酒和清淡的菜肴.">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Vogue Café Porto - Café, Restaurant &amp; Bar">
+    <meta property="og:description" content="“Vogue Café” 是上海最别致的全天用餐体验. 它是现代时尚人士享用美味咖啡的目的地, 在轻松别致的环境中提供鸡尾酒和清淡的菜肴.">
+    <meta property="og:url" content="https://voguecafe.pt/">
+    <meta property="og:site_name" content="Vogue Café Beijing">
+    <meta property="article:modified_time" content="2021-06-09T16:39:27+00:00">
+    <meta name="twitter:card" content="summary_large_image">
+
+
     <link rel="stylesheet" href="./assets/index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/main-page/style.css">
-    <title>VOGUE CAFE</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
         integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -17,17 +38,27 @@
 </head>
 
 <body>
-    <header>
+    <header class="js-header">
         <div class="header">
             <div class="col-left">
                 <div class="logo">
+                    <a href="/#">
+                        CITY NAME<br>
+                        <span class="--custom-logo-font">VOGUE</span><span class="--logo-font">CAFE<span>
 
-                    CITY NAME<br>
-                    <span class="--custom-logo-font">VOGUE</span><span class="--logo-font">CAFE<span>
+                    </a>
 
                 </div>
             </div>
-            <div class="col-right">
+            <div class="sandwich js-sandwich">
+                <div class="burger-menu">
+                    <span class="line-1"></span>
+                    <span class="label">menu</span>
+                    <span class="line-3"></span>
+
+                </div>
+            </div>
+            <div class="col-right js-navbar">
                 <nav class="header-menu">
                     <ul class="header-menu-list">
                         <li class="header-menu-item">
@@ -54,13 +85,15 @@
                 </nav>
                 <span class="vertical-devider">|</span>
                 <select class="header-lng-switcher" name="" id="">
-                    <option value="en">en</option>
+                    <option value="en" selected="selected">EN</option>
+                    <option value="es">ES</option>
+                    <option value="de">DE</option>
                 </select>
                 <div class="header-socials">
                     <ul class="header-socials-list">
                         <li class="header-socials-item">
                             <a class="header-socials-link" href="#">
-                                <svg fill="#fff" height="22px" width="22px" version="1.1" id="Layer_1"
+                                <svg fill="#fff" height="18px" width="18px" version="1.1" id="Layer_1"
                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     viewBox="0 0 310 310" xml:space="preserve">
                                     <g id="XMLID_834_">
@@ -75,7 +108,7 @@
                         </li>
                         <li class="header-socials-item">
                             <a class="header-socials-link" href="#">
-                                <svg fill="#ffffff" height="22px" width="22px" version="1.1" id="Layer_1"
+                                <svg fill="#ffffff" height="18px" width="18px" version="1.1" id="Layer_1"
                                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                     viewBox="0 0 169.063 169.063" xml:space="preserve">
                                     <g>
@@ -100,8 +133,32 @@
     </header>
     <main>
         <div class="banner" id="Banner">
+            <div class="swiper">
+                <div class="swiper-container swiper-banner">
+                    <div class="swiper-wrapper ">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img class="swiper-slide__img" src="./assets/images/banner1.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-slide__img" src="./assets/images/banner2.jpg" alt="">
+
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-slide__img" src="./assets/images/banner3.jpg" alt="">
+
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="swiper-slide__img" src="./assets/images/banner4.jpg" alt="">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
             <div class="banner-inner">
-                <h3 class="banner-title">
+                <h3 class="banner-title ">
                     RUA DE AVIS, 10<br>
                     4050 PORTO<br>
                     PORTUGAL<br>
@@ -109,15 +166,15 @@
                         +351 223 398 550
                     </a>
                 </h3>
-                <button class="btn-first-style">
+                <a href="#Reservations" class="btn-first-style">
                     MAKE A RESERVATION
-                </button>
+                </a>
             </div>
         </div>
         <section id="About">
             <div class="about container">
                 <div class="col">
-                    <h2>
+                    <h2 class="--logo">
                         CITY NAME
                         <br>
                         <span class="--custom-logo-font">VOGUE</span>
@@ -126,11 +183,18 @@
                     </h2>
                 </div>
                 <div class="col">
-                    <p> Offering a modern, elegant and stylish ambience together with food and drinks that are simply
-                        and beautifully crafted and presented, Vogue Café Shanghai gives you the opportunity to step
-                        inside the Vogue world, a world of excitement, luxury and timeless elegance.</p>
-                    <p> With décor that feels like it has been lifted directly from the pages of the magazine, Vogue
-                        Café is the place for the fashionable to meet, connect and be seen.</p>
+                    <p data-aos="fade-left">
+                        OFFERING A MODERN, ELEGANT AND STYLISH AMBIENCE TOGETHER WITH
+                        FOOD AND DRINKS THAT ARE SIMPLY AND BEAUTIFULLY CRAFTED AND PRESENTED, VOGUE CAFE PORTO GIVES
+                        YOU THE OPPORTUNITY TO STEP INSIDE THE VOGUE WORLD, A WORLD OF EXCITEMENT, LUXURY AND TIMELESS
+                        ELEGANCE.
+                    </p>
+                    <p data-aos="fade-left" data-aos-delay="50">
+                        WITH AN ALL DAY MENU REPRESENTING THE BEST OF MODERN EUROPEAN CUISINE THAT FEELS LIKE IT HAS
+                        BEEN LIFTED DIRECTLY FROM THE
+                        PAGES OF THE MAGAZINE, VOGUE CAFE IS THE PLACE TO MEET,
+                        CONNECT AND BE SEEN.
+                    </p>
                 </div>
             </div>
         </section>
@@ -139,7 +203,7 @@
                 <h2>
                     MENU
                 </h2>
-                <div class="menu-swiper">
+                <div class="swiper menu-swiper">
                     <!-- swiper1 -->
                     <div class="swiper-container swiper1">
                         <div class="swiper-wrapper">
@@ -162,56 +226,94 @@
                                     <li class="item">
                                         <div class="item-inner">
                                             <h4 class="item-inner__title">
-                                                Title
+                                                Halloumi Cheese
                                             </h4>
                                             <h5 class="item-inner__undertitle">
-                                                UnderTitle
+                                                Hummus, toasted sourdough
                                             </h5>
                                         </div>
-                                        <span class="item-cost">
-                                            24
+                                        <span class="item-price">
+                                            10
                                         </span>
                                     </li>
                                     <li class="item">
                                         <div class="item-inner">
                                             <h4 class="item-inner__title">
-                                                Title
+                                                Grilled Potruguese Cabbage
                                             </h4>
                                             <h5 class="item-inner__undertitle">
-                                                UnderTitle
+                                                Romesco sauce, almonds
                                             </h5>
                                         </div>
                                         <span class="item-cost">
-                                            24
+                                            12
                                         </span>
                                     </li>
                                     <li class="item">
                                         <div class="item-inner">
                                             <h4 class="item-inner__title">
-                                                Title
+                                                Salmon Poke Bowl
                                             </h4>
                                             <h5 class="item-inner__undertitle">
-                                                UnderTitle
+                                                Raw wild salmon, avocado, sushi rice
                                             </h5>
                                         </div>
                                         <span class="item-cost">
-                                            24
+                                            14
                                         </span>
                                     </li>
                                     <li class="item">
                                         <div class="item-inner">
                                             <h4 class="item-inner__title">
-                                                Title
+                                                Mushroom Fricasse
                                             </h4>
                                             <h5 class="item-inner__undertitle">
-                                                UnderTitle
+                                                Egg, prosciutto
                                             </h5>
                                         </div>
                                         <span class="item-cost">
-                                            24
+                                            15
                                         </span>
                                     </li>
-
+                                    <li class="item">
+                                        <div class="item-inner">
+                                            <h4 class="item-inner__title">
+                                                Cheese & Charcuterie Board
+                                            </h4>
+                                            <h5 class="item-inner__undertitle">
+                                                Raw wild salmon, avocado, sushi rice
+                                            </h5>
+                                        </div>
+                                        <span class="item-cost">
+                                            16
+                                        </span>
+                                    </li>
+                                    <li class="item">
+                                        <div class="item-inner">
+                                            <h4 class="item-inner__title">
+                                                Oysters from Aveiro Coast
+                                            </h4>
+                                            <h5 class="item-inner__undertitle">
+                                                Shallots
+                                            </h5>
+                                        </div>
+                                        <span class="item-cost">
+                                            20
+                                        </span>
+                                    </li>
+                                    <li class="item">
+                                        <div class="item-inner">
+                                            <h4 class="item-inner__title">
+                                                Tuna Poke Bowl
+                                            </h4>
+                                            <h5 class="item-inner__undertitle">
+                                                Raw tuna, fried shrimp, avocado, sushi rice
+                                            </h5>
+                                        </div>
+                                        <span class="item-cost">
+                                            22
+                                        </span>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="swiper-slide">
@@ -645,25 +747,23 @@
                 </div>
             </div>
         </section>
-        <div id="Collage">
+        <div id="Photos">
             <div class="collage">
                 <div class="col">
-                    <div class="collage-item">
+                    <a class="collage-item" data-aos="zoom-in" data-fslightbox="gallery" href="./assets/images/1.png">
                         <img src="./assets/images/1.png" alt="" class="collage-item__img">
+                    </a>
 
-                    </div>
                 </div>
                 <div class="col">
-                    <div class="collage-item">
+                    <a class="collage-item" data-aos="zoom-in" data-fslightbox="gallery" href="./assets/images/2.png">
                         <img src="./assets/images/2.png" alt="" class="collage-item__img">
-
-                    </div>
+                    </a>
                 </div>
                 <div class="col">
-                    <div class="collage-item">
+                    <a class="collage-item" data-aos="zoom-in" data-fslightbox="gallery" href="./assets/images/3.png">
                         <img src="./assets/images/3.png" alt="" class="collage-item__img">
-
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -671,50 +771,56 @@
             <div class="events container">
                 <h2 class="events-title">Events</h2>
                 <ul class="events-list">
-                    <li class="events-item">
-                        <h3>
+                    <li class="events-item" data-aos="fade-right" data-aos-delay="0">
+                        <h3 class="events-item__title">
                             Set lunch menu
                         </h3>
-                        <p>
-                            Mondays to Fridays | 12:30px - 3px<br>
-                            3-Courses for 25
+                        <p class="events-item__text">
+                            Mondays to Fridays | 12:30pm - 3pm<br>
+                            3-Courses for €25
                         </p>
                     </li>
-                    <li class="events-item">
-                        <h3>
-                            Set lunch menu
+                    <li class="events-item" data-aos="fade-right" data-aos-delay="50">
+                        <h3 class="events-item__title">
+                            AFTERNOON TEA
                         </h3>
-                        <p>
-                            Mondays to Fridays | 12:30px - 3px<br>
-                            3-Courses for 25
+                        <p class="events-item__text">
+                            Daily | 4pm-6pm
                         </p>
                     </li>
-                    <li class="events-item">
-                        <h3>
-                            Set lunch menu
+                    <li class="events-item" data-aos="fade-right" data-aos-delay="100">
+                        <h3 class="events-item__title">
+                            SET DINNER MENU
                         </h3>
-                        <p>
-                            Mondays to Fridays | 12:30px - 3px<br>
-                            3-Courses for 25
+                        <p class="events-item__text">
+                            Mondays to Fridays | 5:30pm - 9pm<br>
+                            3-Courses for €80
                         </p>
                     </li>
-                    <li class="events-item">
-                        <h3>
-                            Set lunch menu
+                    <li class="events-item" data-aos="fade-right" data-aos-delay="150">
+                        <h3 class="events-item__title">
+                            OYSTERS & PRESUNTO
                         </h3>
-                        <p>
-                            Mondays to Fridays | 12:30px - 3px<br>
-                            3-Courses for 25
+                        <p class="events-item__text">
+                            Daily | 7pm-8pm
+                        </p>
+                    </li>
+                    <li class="events-item" data-aos="fade-right" data-aos-delay="200">
+                        <h3 class="events-item__title">
+                            WEEKEND BRUNCH
+                        </h3>
+                        <p class="events-item__text">
+                            Daily | 4pm-6pm
                         </p>
                     </li>
                 </ul>
             </div>
         </section>
-        <section id="Contacts">
+        <section id="Reservations">
             <div class="contacts">
                 <div class="col contacts-inner">
-                    <div class="contacts-content">
-                        <h2>
+                    <div class="container contacts-content">
+                        <h2 class="--logo">
                             CITY NAME<br>
                             <span class="--custom-logo-font">VOGUE</span>
                             <br><span class="--logo-font">CAFE<span>
@@ -730,20 +836,23 @@
                         </h3> -->
 
                         <h3 class="contacts-title">
-                            RUA DE AVIS, 10<br>
-                            4050 PORTO<br>
-                            PORTUGAL<br>
+
+                            <a href="https://goo.gl/maps/4jgWRAYbGK8EaQsa9">RUA
+                                DE AVIS, 10<br>
+                                4050 PORTO<br>
+                                PORTUGAL<br>
+                            </a>
                             <a href="tel:+351223398550">
                                 +351 223 398 550
                             </a>
                         </h3>
 
-                        <h3>
+                        <h3 data-aos="fade-right" data-aos-delay="0">
                             Opening hours
                         </h3>
 
                         <ul>
-                            <li>
+                            <li data-aos="fade-right" data-aos-delay="50">
                                 Sunday to Thursday
                                 <ul>
                                     <li>
@@ -752,7 +861,7 @@
                                 </ul>
 
                             </li>
-                            <li>
+                            <li data-aos="fade-right" data-aos-delay="100">
                                 Friday. Saturday and Eves of Bank Holidays
                                 <ul>
                                     <li>
@@ -763,13 +872,17 @@
                         </ul>
 
                         <h3>
-                            Conde nast
+                            Condé nast
                         </h3>
                     </div>
 
                 </div>
                 <div class="col map">
-                    <img src="./assets/images/map.jpg" alt="">
+                    <div class="map-inner">
+                        <!-- ACF MAP -->
+                        <img src="./assets/images/map.jpg" alt="">
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -791,36 +904,47 @@
                     </li>
                     <li class="footer-nav-item">
                         <a href="#" class="footer-nav-link">
-                            Doha
+                            Kuala lumpur
                         </a>
                     </li>
                     <li class="footer-nav-item">
                         <a href="#" class="footer-nav-link">
-                            Doha
+                            Beijing
                         </a>
                     </li>
                     <li class="footer-nav-item">
                         <a href="#" class="footer-nav-link">
-                            Doha
+                            Porto
                         </a>
                     </li>
                     <li class="footer-nav-item">
                         <a href="#" class="footer-nav-link">
-                            Doha
+                            Riyadh
+                        </a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">
+                            Shanghai
+                        </a>
+                    </li>
+                    <li class="footer-nav-item">
+                        <a href="#" class="footer-nav-link">
+                            Istanbul
                         </a>
                     </li>
                 </ul>
             </nav>
             <div class="footer-bottom">
-                <h3 class="footer-bottom__title">
-                    Conde nast
+                <h3 class="footer-bottom__title --custom-logo-font">
+                    Condé nast
                 </h3>
                 <div class="footer-bottom__content">
                     <div class="row">
-                        <p>COPY RIGTHS</p>
+                        <p>© 2023 Condé Nast. All rights reserved. <a href="/privacy-police">Privacy Police</a></p>
                     </div>
                     <div class="row">
-                        <p>The material</p>
+                        <p>The material on this site may not be reproduced, distributed, transmitted, cached or
+                            otherwise used, except with prior written permisson of Condé Nast.</p>
                     </div>
                 </div>
             </div>
@@ -839,6 +963,15 @@
                 }
             }
 
+            var swiperBanner = new Swiper('.swiper-banner', {
+                effect: 'fade',
+                fadeEffect: {
+                    crossFade: true
+                }, autoplay: {
+                    delay: 5000,
+                }
+            })
+
             var swiper1 = new Swiper('.swiper1', {
                 slidesPerView: 'auto',
                 paginationClickable: true,
@@ -856,6 +989,8 @@
                 }
             });
 
+
+
             var swiper2 = new Swiper('.swiper2', {
                 direction: 'horizontal',
                 loop: false,
@@ -865,32 +1000,50 @@
 
                         var n = swiper.activeIndex;
                         setCurrentSlide($(".swiper1 .swiper-slide").eq(n), n);
-                        console.log('sss')
+                        console.log(swiper.activeIndex)
                         swiper1.slideTo(n, 500, false);
                     }
                 }
 
             });
-            let Data = "smallplates, salads, soups, sandwiches, mains, vegetarian, dessersts, burnch";
-            $(".start").on('click', function () {
-                $(".show").html('');
-                var flag = true, j = 0;
-                (function Data() {
-                    if (j < Data.length) {
-                        setTimeout(function () {
-                            $(".show").html(Data.slice(0, j++));
-                            Data();
-                        }, 200);
-                    }
-                    else {
-                        $(".show").html(Data);
-                        flag = true;
-                    }
-                })();
-            });
 
 
         }
+        $('.burger-menu').on('click', function () {
+            checkMenu()
+        });
+
+        $('.header-menu-link').on('click', function () {
+            checkMenu()
+        })
+
+        $('.logo a').on('click', function () {
+
+            window.location.href = $(this).attr('href');
+            if ($('.js-header').hasClass('nav-active')) {
+                checkMenu()
+            }
+
+
+        })
+
+        const checkMenu = () => {
+            $('.js-header').toggleClass('nav-active')
+            if ($('.burger-menu').hasClass("burger-menu-clicked")) {
+                $('.burger-menu').removeClass("burger-menu-clicked");
+                $('.burger-menu').addClass("burger-menu-closing");
+            } else {
+                $('.burger-menu').addClass("burger-menu-clicked");
+                $('.burger-menu').removeClass("burger-menu-closing");
+            }
+        }
+
+
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/Modules/fslightbox-basic-3.4.1/fslightbox.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 
