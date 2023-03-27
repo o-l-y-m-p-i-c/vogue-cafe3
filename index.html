@@ -743,7 +743,7 @@
                 </div>
             </div>
         </section>
-        <div id="Photos">
+        <div id="Photos" class="collage-wrapper">
             <!-- <div class="collage">
                 <div class="col">
                     <a class="collage-item" data-aos="zoom-in" data-fslightbox="gallery" href="./assets/images/1.png">
@@ -1079,8 +1079,11 @@
                 // options
                 itemSelector: '.mm-masonry__item',
                 layoutMode: 'masonry',
+                percentPosition: true,
                 masonry: {
-                    // gutter: 10
+                    // gutter: 10,
+                    // columnWidth: 10,
+
                 }
 
 

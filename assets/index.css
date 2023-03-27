@@ -126,7 +126,7 @@ a {
 
 body {
     display: flex;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     flex-direction: column;
 }
 
@@ -151,6 +151,11 @@ main {
 
 footer {
     flex: 0 0 auto;
+}
+
+section {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 
