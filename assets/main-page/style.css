@@ -29,6 +29,7 @@ Header
 
 .header .logo a {
     color: black;
+    font-family: var(--font-family-secondary);
 }
 
 .vertical-devider {
@@ -461,7 +462,7 @@ footer {
 .item {
     display: flex;
     column-gap: 20px;
-    width: 35%;
+    width: 40%;
     justify-content: space-between;
 }
 
