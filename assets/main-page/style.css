@@ -461,6 +461,12 @@ footer {
     font-size: 25px
 }
 
+
+.swiper2 .swiper-slide.custom-scroll {
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
 .item {
     display: flex;
     column-gap: 20px;
@@ -604,19 +610,8 @@ footer {
         --main-margin-top: 67px
     }
 
-    .mm-masonry {
-        /* display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        /* flex-wrap: wrap; */
-        /* display: flex;
-        flex-wrap: wrap; */
-    }
 
     .mm-masonry__item {
-        /* flex-basis: 33.33%;
-        display: inline-flex; */
-        display: inline-block;
-        float: left;
         max-width: 32%;
     }
 
@@ -824,7 +819,23 @@ footer {
 
 
 
+.collage-wrapper {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+.collage {
+    /* width: calc(100% + 10px); */
+}
+
+.collage .grid {
+    /* margin-left: -5px; */
+}
+
+
 .mm-masonry__item {
+    /* padding: 5px; */
+    /* box-sizing: border-box; */
     width: 10%;
     display: inline-flex;
 }

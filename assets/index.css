@@ -126,8 +126,12 @@ a {
 
 body {
     display: flex;
-    overflow-x: hidden;
     flex-direction: column;
+}
+
+section {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 header {
