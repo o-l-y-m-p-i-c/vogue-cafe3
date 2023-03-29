@@ -395,10 +395,12 @@ footer {
 .swiper1 .swiper-button-prev::after,
 .swiper1 .swiper-button-next::after {
     content: '';
+    pointer-events: none;
 }
 
 .swiper1 .swiper-button-prev,
 .swiper1 .swiper-button-next {
+    pointer-events: none;
     /* background-color: red; */
     width: 50px;
 }
