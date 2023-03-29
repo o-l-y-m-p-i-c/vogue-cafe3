@@ -399,7 +399,8 @@ footer {
 
 .swiper1 .swiper-button-prev,
 .swiper1 .swiper-button-next {
-    background-color: red;
+    /* background-color: red; */
+    width: 50px;
 }
 
 .swiper1 .swiper-button-prev {
