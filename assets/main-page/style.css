@@ -583,6 +583,8 @@ footer {
     .events-item {
         flex-basis: 50%;
     }
+
+
 }
 
 @media screen and (max-width: 900px) {
@@ -644,9 +646,62 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    .banner {
+        align-items: center;
+    }
+
+    .banner-inner {
+        padding: 20px;
+    }
+
     .about {
         display: block;
     }
+
+    .menu-swiper {
+        margin-top: 20px;
+    }
+
+    .footer-nav-link {
+        font-size: 15px;
+    }
+
+    .footer-logo * {
+        font-size: 48px !important;
+    }
+
+
+    .events-title,
+    .contacts-content,
+    .menu h2 {
+        text-align: center;
+    }
+
+    .events-item {
+        margin-top: 30px;
+        flex-basis: 100%;
+        text-align: center;
+        position: relative;
+    }
+
+    .events-item::after {
+        content: "";
+
+        width: 50px;
+        border-bottom: 1px solid black;
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    .swiper2 .swiper-slide {
+        padding-top: 20px;
+    }
+
+    .events-item:last-child::after {
+        content: unset;
+    }
+
 
     .about .col:nth-child(1) {
         float: left;
@@ -691,8 +746,8 @@ footer {
 @media screen and (max-width: 600px) {
 
     .item {
-        width: 49%;
-
+        width: unset;
+        flex-basis: calc(50% - 10px);
     }
 
     .item .item-inner__undertitle {
@@ -701,6 +756,14 @@ footer {
 
     .item .item-inner__title {
         font-size: 14px;
+    }
+
+    .swiper1 .swiper-slide {
+        font-size: 14px;
+    }
+
+    .swiper-slide .list {
+        column-gap: 20px;
     }
 }
 
