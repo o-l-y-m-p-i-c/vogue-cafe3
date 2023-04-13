@@ -615,6 +615,10 @@ footer {
         transition: padding 0.3s ease-out, height 0.3s ease-out, background-color 0.3s ease-out;
     }
 
+    .header-menu-link {
+        margin: 0;
+    }
+
     header.nav-active .header .col-right {
         padding: calc(var(--main-margin-top) / 2) 10px;
         height: calc(100vh - var(--main-margin-top));
